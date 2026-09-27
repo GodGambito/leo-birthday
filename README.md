@@ -27,7 +27,7 @@ Aplicación web desarrollada en **Next.js (App Router)** con **TypeScript**, **T
    - Titular: `Americo Barreto`
    - Botón táctil para copiar el número al portapapeles con confirmación visual y confetti.
 6. **Detalles de la Fiesta**:
-   - Fecha: Viernes, 03 de Octubre • 8:30 PM
+   - Fecha: Sábado, 03 de Octubre • 8:30 PM
    - Dirección: `5131 Crown Haven Dr. Kissimmee, Fl. 34746`
    - Atajos directos para abrir en **Google Maps**, **Apple Maps** y **Waze**.
 7. **Previsualización en Redes Sociales (Open Graph)**:

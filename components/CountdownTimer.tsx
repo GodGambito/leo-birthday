@@ -73,7 +73,7 @@ export default function CountdownTimer() {
           </div>
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-[#222222] text-zinc-300 border border-[#333333]">
             <Calendar className="w-3.5 h-3.5 text-[#B6FF00]" />
-            <span>Viernes, 03 de Octubre • 8:30 PM</span>
+            <span>Sábado, 03 de Octubre • 8:30 PM</span>
           </div>
         </div>
 

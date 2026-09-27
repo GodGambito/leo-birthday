@@ -50,7 +50,7 @@ export default function PartyDetails() {
                 Fecha de la Fiesta
               </span>
               <span className="text-base sm:text-lg font-black text-white">
-                Viernes, 03 de Octubre
+                Sábado, 03 de Octubre
               </span>
             </div>
           </div>
