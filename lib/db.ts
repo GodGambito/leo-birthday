@@ -2,20 +2,23 @@ import { createClient } from "@supabase/supabase-js";
 import { Contributor, Contribution, SummaryData } from "./types";
 import { normalizeName, capitalizeName } from "./utils";
 
-const GOAL_AMOUNT = parseInt(process.env.NEXT_PUBLIC_GOAL_AMOUNT || "1000", 10);
+const GOAL_AMOUNT = parseInt(
+  process.env.GOAL_AMOUNT || process.env.NEXT_PUBLIC_GOAL_AMOUNT || "1000",
+  10
+);
 
-// Supports standard, prefixed (e.g. SUPABASE_URL) and Vercel marketplace integration variables
+// Supports private server variables (SUPABASE_URL) as primary, plus public and prefixed fallbacks
 const supabaseUrl =
-  process.env.NEXT_PUBLIC_SUPABASE_URL ||
   process.env.SUPABASE_URL ||
+  process.env.NEXT_PUBLIC_SUPABASE_URL ||
   process.env.SUPABASE_PROJECT_URL ||
   process.env.VERCEL_SUPABASE_URL;
 
 const supabaseKey =
-  process.env.SUPABASE_SERVICE_ROLE_KEY ||
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
   process.env.SUPABASE_ANON_KEY ||
+  process.env.SUPABASE_SERVICE_ROLE_KEY ||
   process.env.SUPABASE_KEY ||
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
   process.env.SUPABASE_API_KEY ||
   process.env.VERCEL_SUPABASE_ANON_KEY;
 
